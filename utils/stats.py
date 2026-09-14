@@ -77,36 +77,36 @@ async def update_readme_source_stats():
         return
 
     sources = data.get("sources", [])
-    fetcher = Fetcher(timeout=15)
     processor = NodeProcessor()
-
     source_results = []
-    for s in sources:
-        if s.get('enabled') is False:
-            continue
-        raw_url = s.get('url', '')
-        name = s.get('name', '未命名源')
-        if not raw_url:
-            continue
 
-        url = raw_url.replace('%Y', now.strftime('%Y')).replace('%m', now.strftime('%m')).replace('%d', now.strftime('%d'))
-        if s.get('recursive') and not url.startswith('*'):
-            url = '*' + url
-        ignore = s.get('ignore')
-        filters = {'ignore': ignore} if ignore else {}
+    async with Fetcher(timeout=15) as fetcher:
+        for s in sources:
+            if s.get('enabled') is False:
+                continue
+            raw_url = s.get('url', '')
+            name = s.get('name', '未命名源')
+            if not raw_url:
+                continue
 
-        try:
-            nodes = await fetcher.fetch_nodes(url, filters)
-            valid_nodes = processor.filter_invalid(nodes)
-            source_results.append({
-                "name": name,
-                "valid_count": len(valid_nodes)
-            })
-        except Exception:
-            source_results.append({
-                "name": name,
-                "valid_count": 0
-            })
+            url = raw_url.replace('%Y', now.strftime('%Y')).replace('%m', now.strftime('%m')).replace('%d', now.strftime('%d'))
+            if s.get('recursive') and not url.startswith('*'):
+                url = '*' + url
+            ignore = s.get('ignore')
+            filters = {'ignore': ignore} if ignore else {}
+
+            try:
+                nodes = await fetcher.fetch_nodes(url, filters)
+                valid_nodes = processor.filter_invalid(nodes)
+                source_results.append({
+                    "name": name,
+                    "valid_count": len(valid_nodes)
+                })
+            except Exception:
+                source_results.append({
+                    "name": name,
+                    "valid_count": 0
+                })
 
     render_and_update_readme_source_stats(source_results, now)
 

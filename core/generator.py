@@ -9,6 +9,9 @@ from utils.regions import REGIONS_DB, match_region
 from utils.common import b64encodes
 from utils.logger import logger
 
+_MB_SPEED_RE = re.compile(r'(\d+\.?\d*)\s*mb/s', re.IGNORECASE)
+_KB_SPEED_RE = re.compile(r'(\d+\.?\d*)\s*kb/s', re.IGNORECASE)
+
 REGION_NAMES = {
     code: f"{info['emoji']} {info['name']}"
     for code, info in REGIONS_DB.items()
@@ -64,21 +67,22 @@ class Generator:
 
         def get_node_quality_score(name: str) -> float:
             score = 10.0
-            m_mb = re.search(r'(\d+\.?\d*)\s*mb/s', name.lower())
+            name_lower = name.lower()
+            m_mb = _MB_SPEED_RE.search(name)
             if m_mb:
                 try:
                     score = 100.0 + float(m_mb.group(1))
                 except (ValueError, TypeError):
                     score = 100.0
-            elif re.search(r'(\d+\.?\d*)\s*kb/s', name.lower()):
+            elif _KB_SPEED_RE.search(name):
                 score = 95.0
-            elif 'speednode' in name.lower():
+            elif 'speednode' in name_lower:
                 score = 90.0
             else:
                 node_obj = name_to_node.get(name)
                 if node_obj and getattr(node_obj, 'type', '') in ('hysteria2', 'hy2'):
                     score = 80.0
-                elif 'hy2' in name.lower() or 'hysteria' in name.lower():
+                elif 'hy2' in name_lower or 'hysteria' in name_lower:
                     score = 80.0
             return score
 
@@ -193,7 +197,7 @@ class Generator:
             f.write(yaml_content)
         
         # 7. Save Universal Links (Base64 & Plain TXT)
-        node_urls = [node.to_url() for node in nodes if node.to_url()]
+        node_urls = [url for node in nodes if (url := node.to_url())]
         raw_urls_str = "\n".join(node_urls)
         
         txt_path = "list.txt"

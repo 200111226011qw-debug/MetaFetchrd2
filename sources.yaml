@@ -47,7 +47,9 @@ sources:
     url: "https://raw.githubusercontent.com/shaoyouvip/free/main/all.yaml"
     note: "每日更新补充"
 
-backups:
+  # ==========================================
+  # 💤 备选休眠源 (默认关闭，需要时设 enabled: true)
+  # ==========================================
   - name: "🔥🔥🔥 ClashGitHub"
     url: "https://clashgithub.com/wp-content/uploads/rss/%Y%m%d.txt"
     enabled: false
@@ -85,3 +87,4 @@ backups:
   - name: "[动态日期] oneClash YAML"
     url: "https://oss.oneclash.cc/%Y/%m/%Y%m%d.yaml"
     enabled: false
+
