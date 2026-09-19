@@ -8,8 +8,8 @@
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-频道交流-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/MetaFetchNodes)
 <!-- STATS_BADGE_START -->
-![Update](https://img.shields.io/badge/Updated-2026-09-19--06%3A45%3A32-green.svg?style=flat-square)
-![Nodes](https://img.shields.io/badge/Valid_Nodes-905-orange.svg?style=flat-square)
+![Update](https://img.shields.io/badge/Updated-2026-09-19--08%3A49%3A50-green.svg?style=flat-square)
+![Nodes](https://img.shields.io/badge/Valid_Nodes-901-orange.svg?style=flat-square)
 ![Sources](https://img.shields.io/badge/Active_Sources-9-blue.svg?style=flat-square)
 <!-- STATS_BADGE_END -->
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
@@ -118,14 +118,14 @@ graph LR
 ## 📊 节点分布统计
 
 <!-- STATS_TABLE_START -->
-> 更新时间：`2026-09-19 06:45:32`
-> 运行分析：从 `9` 个活跃源中抓取 `1021` 个节点，耗时 `0.60s`。去重后保留 `905` 个有效节点。
+> 更新时间：`2026-09-19 08:49:50`
+> 运行分析：从 `9` 个活跃源中抓取 `1020` 个节点，耗时 `0.45s`。去重后保留 `901` 个有效节点。
 
 <div style="overflow-x: auto;">
 
 | 地区分布 | 🇭🇰香港 | 🇹🇼台湾 | 🇯🇵日本 | 🇺🇸美国 | 🇸🇬新加坡 | 🇰🇷韩国 | 🇩🇪德国 | 🇬🇧英国 | 🇫🇷法国 | 🇷🇺俄罗斯 | 🇨🇦加拿大 | 🇳🇱荷兰 | 🇨🇭瑞士 | 🇮🇳印度 | 🇹🇷土耳其 | 🇦🇺澳大利亚 | 🇲🇾马来西亚 | 🇧🇷巴西 | 🇦🇷阿根廷 | 🇲🇽墨西哥 | 🇮🇹意大利 | 🇪🇸西班牙 | 🇨🇳中国 | 🇷🇴罗马尼亚 | 🇫🇮芬兰 | 🇮🇪爱尔兰 | 🇸🇪瑞典 | 🇵🇱波兰 | 🇨🇿捷克 | 🇦🇹奥地利 | 🇦🇪阿联酋 | 🇨🇾塞浦路斯 | 🇺🇦乌克兰 | 🇳🇴挪威 | 🇩🇰丹麦 | 🇵🇹葡萄牙 | 🇧🇬保加利亚 | 🇿🇦南非 | 🌍其他 | **总计** |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **数量** | 39 | 11 | 37 | 257 | 34 | 25 | 21 | 22 | 15 | 4 | 3 | 21 | 3 | 3 | 8 | 5 | 1 | 1 | 1 | 1 | 1 | 9 | 13 | 131 | 4 | 2 | 7 | 2 | 2 | 4 | 3 | 1 | 2 | 1 | 2 | 1 | 1 | 1 | 206 | **905** |
+| **数量** | 40 | 11 | 37 | 254 | 34 | 25 | 19 | 17 | 16 | 5 | 3 | 17 | 4 | 3 | 7 | 6 | 1 | 1 | 1 | 1 | 1 | 8 | 15 | 133 | 9 | 2 | 7 | 4 | 1 | 3 | 3 | 1 | 2 | 1 | 1 | 1 | 2 | 1 | 204 | **901** |
 
 </div>
 <!-- STATS_TABLE_END -->
@@ -135,7 +135,7 @@ graph LR
 <!-- SOURCE_STATS_TABLE_START -->
 ### 📡 各订阅源贡献度明细
 
-> 数据计算时间：`2026-09-19 06:45:31`
+> 数据计算时间：`2026-09-19 08:49:49`
 
 <table width="100%"><tr><td>
 
@@ -143,16 +143,16 @@ graph LR
 
 | 排名 | 订阅源名称 | 有效节点数 | 节点贡献占比 |
 | :---: | :--- | :---: | :---: |
-| 1 | `🔥🔥🔥 w1770946466 长期订阅` | **550** 个 | `54.56%` |
-| 2 | `📡 Zhangkai 系列 (speednodes)` | **144** 个 | `14.29%` |
-| 3 | `📡 shaoyouvip 每日更新` | **101** 个 | `10.02%` |
-| 4 | `[长效备份] hysteria2 节点` | **93** 个 | `9.23%` |
+| 1 | `🔥🔥🔥 w1770946466 长期订阅` | **550** 个 | `54.62%` |
+| 2 | `📡 Zhangkai 系列 (speednodes)` | **144** 个 | `14.30%` |
+| 3 | `📡 shaoyouvip 每日更新` | **100** 个 | `9.93%` |
+| 4 | `[长效备份] hysteria2 节点` | **93** 个 | `9.24%` |
 | 5 | `📡 Huibq 聚合` | **43** 个 | `4.27%` |
 | 6 | `⚡ Misaka Chromego 聚合池` | **25** 个 | `2.48%` |
-| 7 | `📱 Pawdroid 免费节点库` | **20** 个 | `1.98%` |
+| 7 | `📱 Pawdroid 免费节点库` | **20** 个 | `1.99%` |
 | 8 | `[长效备份] hy2 节点` | **18** 个 | `1.79%` |
 | 9 | `🔥🔥🔥 日抛机场系列` | **14** 个 | `1.39%` |
-| **-** | **总计 (包含跨源重合)** | **1008** 个 | `100.00%` |
+| **-** | **总计 (包含跨源重合)** | **1007** 个 | `100.00%` |
 
 </div>
 
