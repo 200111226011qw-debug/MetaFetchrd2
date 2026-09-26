@@ -8,8 +8,8 @@
 [![Python Version](https://img.shields.io/badge/python-3.8+-blue.svg?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
 [![Telegram Channel](https://img.shields.io/badge/Telegram-频道交流-26A5E4?style=flat-square&logo=telegram&logoColor=white)](https://t.me/MetaFetchNodes)
 <!-- STATS_BADGE_START -->
-![Update](https://img.shields.io/badge/Updated-2026-09-26--12%3A48%3A18-green.svg?style=flat-square)
-![Nodes](https://img.shields.io/badge/Valid_Nodes-835-orange.svg?style=flat-square)
+![Update](https://img.shields.io/badge/Updated-2026-09-26--14%3A51%3A19-green.svg?style=flat-square)
+![Nodes](https://img.shields.io/badge/Valid_Nodes-834-orange.svg?style=flat-square)
 ![Sources](https://img.shields.io/badge/Active_Sources-9-blue.svg?style=flat-square)
 <!-- STATS_BADGE_END -->
 [![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
@@ -118,14 +118,14 @@ graph LR
 ## 📊 节点分布统计
 
 <!-- STATS_TABLE_START -->
-> 更新时间：`2026-09-26 12:48:18`
-> 运行分析：从 `9` 个活跃源中抓取 `976` 个节点，耗时 `0.31s`。去重后保留 `835` 个有效节点。
+> 更新时间：`2026-09-26 14:51:19`
+> 运行分析：从 `9` 个活跃源中抓取 `976` 个节点，耗时 `0.49s`。去重后保留 `834` 个有效节点。
 
 <div style="overflow-x: auto;">
 
 | 地区分布 | 🇭🇰香港 | 🇹🇼台湾 | 🇯🇵日本 | 🇺🇸美国 | 🇸🇬新加坡 | 🇰🇷韩国 | 🇩🇪德国 | 🇬🇧英国 | 🇫🇷法国 | 🇷🇺俄罗斯 | 🇨🇦加拿大 | 🇳🇱荷兰 | 🇨🇭瑞士 | 🇮🇳印度 | 🇹🇷土耳其 | 🇦🇺澳大利亚 | 🇲🇾马来西亚 | 🇦🇷阿根廷 | 🇲🇽墨西哥 | 🇮🇹意大利 | 🇪🇸西班牙 | 🇨🇳中国 | 🇷🇴罗马尼亚 | 🇫🇮芬兰 | 🇮🇪爱尔兰 | 🇸🇪瑞典 | 🇵🇱波兰 | 🇨🇿捷克 | 🇦🇹奥地利 | 🇦🇪阿联酋 | 🇨🇾塞浦路斯 | 🇺🇦乌克兰 | 🇳🇴挪威 | 🇩🇰丹麦 | 🇵🇹葡萄牙 | 🇭🇺匈牙利 | 🇿🇦南非 | 🌍其他 | **总计** |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **数量** | 41 | 12 | 37 | 237 | 29 | 25 | 19 | 17 | 13 | 4 | 3 | 17 | 3 | 3 | 7 | 2 | 1 | 1 | 1 | 1 | 9 | 6 | 119 | 3 | 2 | 5 | 3 | 2 | 4 | 2 | 1 | 3 | 1 | 1 | 1 | 1 | 1 | 198 | **835** |
+| **数量** | 41 | 12 | 36 | 238 | 29 | 25 | 19 | 16 | 13 | 5 | 3 | 17 | 3 | 3 | 7 | 2 | 1 | 1 | 1 | 1 | 9 | 6 | 119 | 3 | 2 | 5 | 3 | 2 | 4 | 2 | 1 | 2 | 1 | 1 | 1 | 1 | 1 | 198 | **834** |
 
 </div>
 <!-- STATS_TABLE_END -->
@@ -135,7 +135,7 @@ graph LR
 <!-- SOURCE_STATS_TABLE_START -->
 ### 📡 各订阅源贡献度明细
 
-> 数据计算时间：`2026-09-26 12:48:18`
+> 数据计算时间：`2026-09-26 14:51:19`
 
 <table width="100%"><tr><td>
 
